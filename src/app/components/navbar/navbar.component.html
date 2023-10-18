@@ -1,0 +1,26 @@
+<nav class="navbar navbar-fixed-top container-fluid bg-success-subtle d-flex">
+  <div class="left-side d-flex">
+    <div class="logo">
+      <a routerLink="/home"
+        ><img
+          id="logoImg"
+          src="https://github.com/saravanan-sarav/Angular-E-Commerce/blob/main/src/assets/images/logo-sss.png"
+          alt="Logo"
+      /></a>
+    </div>
+    <div class="Links">
+      <a class="btn leftLinkTag" href="">ELECTRONICS</a>
+      <a class="btn leftLinkTag" href="">FASHION</a>
+      <a class="btn leftLinkTag" href="">HOME APPLIANCES</a>
+      <a class="btn leftLinkTag" href="">TRENDING</a>
+    </div>
+  </div>
+  <div class="right-side">
+    <a class="btn rightLinkTag" routerLink="/cart"
+      >CART {{ getCount() > 0 ? getCount() : "" }}</a
+    >
+    <a class="btn rightLinkTag" routerLink="/orders">ORDERS</a>
+    <a class="btn rightLinkTag">CONTACT</a>
+    <a class="btn btn-outline-danger rightLinkTag" (click)="logout()">LOGOUT</a>
+  </div>
+</nav>

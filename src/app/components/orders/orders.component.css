@@ -1,0 +1,43 @@
+.orderCard {
+  height: 50%;
+}
+.orderCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 3px 15px;
+  transition-duration: 0.1s;
+  height: 50%;
+}
+.productTracking {
+  color: aliceblue;
+  width: 50%;
+}
+.estimateDelivery {
+  color: aliceblue;
+  width: 50%;
+}
+.stockQuantity {
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 3px 15px;
+}
+.totalPrice {
+  width: 100%;
+  height: 2px;
+}
+.DeleteButton {
+  margin-left: 45%;
+  margin-top: 10%;
+}
+.deliveryAddress {
+  color: aliceblue;
+}
+.orderedDate {
+  color: aliceblue;
+}
+
+/* Admin Product Page Starts */
+.adminProductList {
+  height: 120px;
+  width: 100px;
+  margin-left: 30px;
+  margin-top: 30%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 10px;
+}

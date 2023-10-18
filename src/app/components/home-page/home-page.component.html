@@ -1,0 +1,45 @@
+<div class="min-vh-100 container mt-5">
+  <div class="d-flex mt-3">
+    <p class="fs-4 pe-2">Product List:</p>
+    <p class="fs-4">Results</p>
+  </div>
+  <div class="">
+    <div class="row" id="productview">
+      <div *ngFor="let product of products" id="productCard" class="col-3 card">
+        <img
+          [src]="product.image"
+          class="card-img-top ProductList"
+          style="height: 150px; width: 50%; margin-left: 25%"
+          alt="Product Image"
+        />
+        <div class="card-body">
+          <h5 style="height: 30px; font-size:10px" class="card-title">
+            {{ product.title }}
+          </h5>
+          <div class="card-title features">
+            <!-- <ul class="d-flex">
+              <div class="row">
+                <li class="col-6 featureDetails text-break">HD Display</li>
+                <li class="col-6 featureDetails">2 GB RAM</li>
+              </div>
+              <div class="row">
+                <li class="col-6 featureDetails">512GB internal</li>
+                <li class="col-6 featureDetails">4400mAh battery</li>
+              </div>
+            </ul> -->
+            <div class="d-flex">
+              <p class="fs-5 text-danger pt-2 me-2">₹</p>
+              <p class="fs-3 text-danger">{{ product.price }}</p>
+            </div>
+          </div>
+          <a
+            id="addToCart"
+            class="btn btn-success"
+            (click)="addToCart(product.id)"
+            >Add to cart</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

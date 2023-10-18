@@ -1,0 +1,60 @@
+/* Nav Bar CSS */
+/* NAVBAR */
+.navbar {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.leftLinkTag,
+.rightLinkTag {
+  font-size: 12px;
+  font-weight: bold;
+}
+#logoImg {
+  width: 60px;
+  height: 30px;
+  margin-right: 10px;
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* Product List */
+.productList {
+  display: flex;
+  margin-left: 20%;
+  margin-top: 10px;
+  width: 160px;
+  height: 150px;
+  border-radius: 10px;
+}
+.card {
+  width: 23%;
+  height: 23%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.card:hover {
+  width: 23%;
+  height: 23%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 10px;
+  transition-duration: 0.5s;
+}
+.features {
+  font-size: 10px;
+  margin-left: 2px;
+}
+.featureDetails {
+  padding: 2px;
+  margin-left: 5px;
+  width: 100%;
+}
+#addToCart {
+  margin-left: 20%;
+}
