@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Cart } from 'src/app/models/cart';
 import { Product } from 'src/app/models/product';
 import { User } from 'src/app/models/user';
@@ -14,7 +15,7 @@ export class CartComponent {
   Loader: Product[] = [];
   orders: Cart[] = [];
 
-  constructor(private storageService: StorageService) {
+  constructor(private storageService: StorageService, private router: Router) {
     this.cartLoader();
   }
   cartLoader(): void {
@@ -47,6 +48,7 @@ export class CartComponent {
       carts = tempCart;
       this.storageService.loadCart(carts);
       this.Loader = [];
+      this.router.navigate(['orders'], { replaceUrl: true });
     }
   }
 }

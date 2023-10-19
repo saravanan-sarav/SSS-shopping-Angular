@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { User } from 'src/app/models/user';
 import { AuthService } from 'src/app/services/auth.service';
 import { StorageService } from 'src/app/services/storage.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-registration',
@@ -11,8 +12,12 @@ import { StorageService } from 'src/app/services/storage.service';
   styleUrls: ['./registration.component.css'],
 })
 export class RegistrationComponent {
-  errors: string = 'Password MisMatch';
-  constructor(private storageService: StorageService, private router: Router) {}
+  errors: string = 'Password Mismatch';
+  constructor(
+    private storageService: StorageService,
+    private router: Router,
+    private toast: NgToastService
+  ) {}
   regForm = new FormGroup({
     userType: new FormControl('', [Validators.required]),
     firstName: new FormControl('', [Validators.required]),
@@ -62,7 +67,15 @@ export class RegistrationComponent {
   registerUser(): void {
     let users: User[] = this.storageService.getAllUsers();
     let tempReg: User = { ...this.regForm.value, id: users.length + 1 } as User;
-    this.router.navigate(['/'], { replaceUrl: true });
+    this.openSuccess();
+    this.router.navigate(['/login'], { replaceUrl: true });
     this.storageService.registerUser(tempReg);
+  }
+  openSuccess(): void {
+    this.toast.success({
+      detail: 'Registered User Successfully',
+      summary: 'Welcome to SSS Shopping',
+      duration: 2000,
+    });
   }
 }

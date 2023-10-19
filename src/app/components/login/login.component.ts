@@ -21,4 +21,7 @@ export class LoginComponent {
     }
     // this.error = '';
   }
+  getInstructions(): void {
+    this.router.navigate(['/'], { replaceUrl: true });
+  }
 }

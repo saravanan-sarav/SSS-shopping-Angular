@@ -121,7 +121,11 @@
             "
           />
           <div
-            *ngIf="confirmPassword?.value !== password?.value"
+            *ngIf="
+              confirmPassword?.dirty &&
+              password?.dirty &&
+              confirmPassword?.value !== password?.value
+            "
             class="text-danger ms-2"
             style="height: 12px"
           >

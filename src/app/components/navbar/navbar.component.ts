@@ -17,7 +17,7 @@ export class NavbarComponent {
 
   logout(): void {
     this.storageService.removeLoggedInUser();
-    this.router.navigate(['/'], { replaceUrl: true });
+    this.router.navigate(['/login'], { replaceUrl: true });
   }
 
   getCount(): number {

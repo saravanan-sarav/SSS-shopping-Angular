@@ -1,0 +1,82 @@
+Moto Of this Effort:
+    - Learning ANgular basic things like
+        - Component, Module, Services, model, gaurd etc...
+        - Routing
+        - Framework rules.
+        - Good way Practices.
+
+Project Name : SSS-Shopping
+
+Description:
+    	-Develop a  e-commerce website for Buying products. 
+The website aims to provide a user-friendly and secure platform for customers to 
+browse, select, and purchase items, while also offering an efficient backend system for 
+managing products, orders, and customer data.
+
+Technology Used:
+    - Angular - Version - 18.8.0
+        - html - Version - 5
+        - CSS - Version - 3
+        - TypeScript - version - 5.2.2
+    - Storage - Local Storage.
+
+
+Hosting platform:
+    - Github
+
+Supported Devices:
+    - Desktop or large screen Devices for seemless Working and performance.
+    - Preferable to use in Desktop.
+
+Pages:
+    - Registration Pages   
+        - customer can Create and Account in the Patform.
+        - requirements : Name, Email, phoneNumber, Agree terms and Conditions.
+    - Login Pages  
+        - User can Login Using their credentials
+        - requirements: registered Email, registered Password.
+    - Navigation Bar
+        - Contain Logo, cart, Orders, Log Out.
+        - User can See their Products in Cart and their Ordered Products.
+    - Home Page:
+        - Products are Shows in Card form.
+        - Product Card Contents: Product Image, Product Name,Price, Add to Cart Button.
+        - Users Can Add their Favourite Products in their cart.
+        - Count of the products increase based on the user click the add to cart button.
+    - Cart Page:
+        - User can see the product details  in the cart.
+        - User can Place the Orders, which the products in the cart.
+    - Order Page:
+        - User can see their Orders.
+        - Tracking details are avaliable for users and track the package.
+    - Footer:
+        - Full Details about SSS shopping and place any queries.
+        - Still this is static Will Update in future.
+
+Login credentials:
+    - Anyone can create an account and use.
+
+Validations:
+    - User Validations
+    - Login User only see the conents.
+    - Showing cart or orders of the particular user only.
+    - Everything work if the user is logged in.
+
+Future Works:
+    - Selling of Products will implements in Next Version.
+    - Payment Gateway.
+    - Pmplements More User friendly UI for better Understanding.
+
+Greetings:
+    Thanks for you support:
+
+
+Developer's Contact details:
+Name : Saravanan S
+Email : saravananengineer0410@gmail.com
+Phone Number : 6379888041
+
+
+
+
+

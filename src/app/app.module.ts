@@ -12,6 +12,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgToastModule } from 'ng-angular-popup';
+import { ToastMessageComponent } from './components/toast-message/toast-message.component';
+import { IntroductionComponent } from './components/introduction/introduction.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     OrdersComponent,
     NavbarComponent,
     FooterComponent,
+    ToastMessageComponent,
+    IntroductionComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgToastModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
